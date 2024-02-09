@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "Cooper";
+  src: url(./fuentes/CooperHewitt-Bold.ttf);
+}
+@font-face {
+  font-family: "Cooper-Light";
+  src: url(./fuentes/CooperHewitt-Light.ttf);
+}
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(135, 135, 135);
+  }
+
+.main-header{
+    background-color: rgb(135, 135, 135);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.logo{
+ width: 250px;
+ height: 100px;
+}
+
+nav,ul,li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    color: white;
+    font-family: "Cooper-Light";
+    padding: 20px;
+    font-size: large;
+    
+  }
+
+  .carousel-inner{
+    margin-bottom: 70px;
+    height: 600px;
+  }
+
+
+
+.experiencia{
+  background-color: #F0A943;
+  height: 200px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.experiencia-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exp-h1{
+  color: white;
+  font-size: 4rem;
+  font-family:"Cooper" ;
+}
+
+.exp-h2{
+  color: white;
+  font-size: 2rem;
+  font-family:"Cooper-Light" ;
+}
+
+.linea-vertical{
+  background-color: white;
+  width: 3px;
+  height: 120px;
+ 
+}
+
+.servicios{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.servicios-text{
+  color: white;
+  font-family: "Cooper";
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.servicios-clasificacion{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-family: "Cooper";
+}
+
+.servicio-1{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio-2{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio-3{
+  background-color: rgb(166, 166, 166);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio-4{
+  background-color: rgb(247, 150, 71);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.servicios-logos{
+  width: 300px;
+  margin: 2rem;
+}
+
+.servicios-subtextos-1{
+  font-size: large;
+  font-family: "Cooper-Light" ;
+  color: black;
+  margin: 2rem;
+}
+
+.servicios-subtextos-2{
+  font-size: large;
+  font-family: "Cooper-Light" ;
+  color: white;
+  margin: 2rem;
+}
+
+.servicios-subtextos-3{
+  font-size: large;
+  font-family: "Cooper-Light" ;
+  color: black;
+  margin: 2rem;
+}
+
+.servicios-subtextos-4{
+  font-size: large;
+  font-family: "Cooper-Light" ;
+  color: black;
+  margin: 2rem;
+}
+
+.clientes-text{
+  color: white;
+  font-family: "Cooper";
+  font-size: 120px;
+  text-align: center;
+}
+
+.clientes-imagen-fondo{
+  background: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)),
+  url(./img/DARWIN-OPACIDAD.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 15% 15% 15% 15% 15% 15%;
+  justify-content: center;
+}
+
+.imagen-cliente{
+  width: 180px;
+  align-self: center;
+  justify-self: center;
+}
+
+.imagen-cliente-9{
+  grid-column: 1/3;
+  width: 650px;
+  align-self: center;
+  padding: 15px;
+  justify-self: center;
+}
+
+.medios-text{
+  color: white;
+  font-family: "Cooper";
+  font-size: 80px;
+  text-align: center;
+  padding: 20px;
+}
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.contacto-text{
+  color: white;
+  font-family: "Cooper";
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
