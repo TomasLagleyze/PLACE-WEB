@@ -113,13 +113,6 @@ nav,ul,li {
   font-family: "Cooper";
 }
 
-.servicio-1{
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .servicio-2{
   background-color: black;
   display: flex;
@@ -229,4 +222,18 @@ nav,ul,li {
   font-size: 30px;
   text-align: center;
   padding: 20px;
+}
+
+.contacto-subseccion{
+  display: grid;
+  grid-template-columns: 50% auto;
+  align-items: center;
+  justify-items: start;
+  margin-top: 30px;
+}
+
+.contacto-consultas{
+  color: white;
+  font-family: "Cooper";
+  font-size: 35px;
 }
