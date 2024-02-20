@@ -235,5 +235,32 @@ nav,ul,li {
 .contacto-consultas{
   color: white;
   font-family: "Cooper";
-  font-size: 35px;
+  font-size: 25px;
+}
+
+.contacto-oficinas{
+  color: white;
+  font-family: "Cooper";
+  font-size: 25px;
+}
+
+.formulario{
+  color: white;
+  font-family: "Cooper";
+  font-size: 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 380px;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
