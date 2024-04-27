@@ -1,11 +1,21 @@
 @font-face {
   font-family: "Cooper";
-  src: url(./fuentes/CooperHewitt-Bold.ttf);
+  src: url(./fuentes/GOTHICB.TTF);
 }
 @font-face {
   font-family: "Cooper-Light";
-  src: url(./fuentes/CooperHewitt-Light.ttf);
+  src: url(./fuentes/GOTHIC.TTF);
 }
+@font-face {
+  font-family: "Cooper-2";
+  src: url(./fuentes/CooperHewitt-Bold.ttf);
+}
+
+
+
+
+
+
 * {
   padding: 0%;
   margin: 0%;
@@ -15,53 +25,395 @@ html {
   font-size: 100%;
 }
 
-body {
+/* HOME - 1920/1080 */
+
+.body-index {
     font-weight: bolder;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(135, 135, 135);
+    /* background-color: rgb(135, 135, 135); */
+    background-image: linear-gradient(#878787, #878787, #6c6c6c, #0f0f0f);
   }
 
 .main-header{
-    background-color: rgb(135, 135, 135);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 100%;
+    z-index: 9;
 }
 
-.logo{
- width: 250px;
- height: 100px;
+/* NAVBAR */
+
+nav{
+  background:rgb(56, 56, 56);
+  position: fixed;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5 ease;
+  padding-left: 50px;
+  z-index: 10;
 }
 
-nav,ul,li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
+nav.active{
+  background:rgb(56, 56, 56);
+  /* padding: 15px; */
+
+}
+
+nav.active.logo,
+nav.active a{
+color: #000;
+}
+
+nav.active a:hover{
+  background: #000;
+  color: white;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu li{
+  list-style: none;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5 ease;
+  text-align: center;
+}
+
+.menu li a:hover{
+  padding: 5px 10%;
+  background: #fff;
+  color: #F0A943;
+  border-radius: 15px;
+}
+
+.scrol{
+  height: 10px;
+}
+
+
+  .logo{
+    width: 250px;
+    height: 100px;
+   }
+
+  .secciones{
     color: white;
     font-family: "Cooper-Light";
-    padding: 20px;
-    font-size: large;
-    
+    list-style-type: none;
+    text-decoration: none;
   }
+
+/* CARROUSEL */
 
   .carousel-inner{
     margin-bottom: 70px;
-    height: 600px;
+    height: 900px;
   }
 
 
+/* OBJETIVOS */
+
+.objetivos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+}
+
+.img-objetivo{
+  width: 200px;
+}
+
+.linea-vertical-2{
+  background-color: white;
+  width: 3px;
+  height: auto;
+}
+
+.valores{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+margin-bottom: 20px;
+}
+
+.texto-valores{
+  color: white;
+  font-size: x-large;
+  font-family: "Cooper" ;
+}
+
+.texto-valores-2{
+  color: white;
+  font-size: large;
+  font-family: "Cooper-Light" ;
+}
+
+.valor-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 350px
+}
+
+
+
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.intro{
+  background-color: rgb(247, 150, 71);
+  margin-bottom: 50px;
+  height: 150px;
+}
+
+.text-intro-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 150px;
+}
+
+.intro-text{
+  color: #494949;
+  font-family: "Cooper";
+  align-self: center;
+}
+
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  background: #3b3b3b;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  color: white;
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: rgb(247, 150, 71);
+}
+
+.timeline ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent rgb(247, 150, 71) transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent rgb(247, 150, 71);
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.clientes-exp-1{
+  width: 150px;
+}
+
+.clientes-exp-2{
+  width: 80px;
+}
+
+.exp-clientes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: rgb(247, 150, 71);
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent rgb(247, 150, 71) transparent transparent;
+  }
+}
+
+
+/* EXTRA/CLIP PATH STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline-clippy ul li::after {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
+.timeline-rhombus ul li::after {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.timeline-rhombus ul li div::before {
+  bottom: 12px;
+}
+
+.timeline-star ul li::after {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.timeline-heptagon ul li::after {
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+}
+
+.timeline-infinite ul li::after {
+  animation: scaleAnimation 2s infinite;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.25);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+
+
+/* EXPERIENCIA */
 
 .experiencia{
-  background-color: #F0A943;
+  background-color: rgb(247, 150, 71);
   height: 200px;
-  padding: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -72,6 +424,8 @@ nav,ul,li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
+  
 }
 
 .exp-h1{
@@ -93,6 +447,8 @@ nav,ul,li {
  
 }
 
+/* SERVICIOS */
+
 .servicios{
   margin-top: 70px;
   margin-bottom: 70px;
@@ -106,67 +462,86 @@ nav,ul,li {
 }
 
 .servicios-clasificacion{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  font-family: "Cooper";
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
 }
 
-.servicio-2{
+.servicio-1{
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.servicio-3{
+.servicio-2{
   background-color: rgb(166, 166, 166);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.servicio-4{
+.servicio-3{
   background-color: rgb(247, 150, 71);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
 .servicios-logos{
   width: 300px;
   margin: 2rem;
 }
 
-.servicios-subtextos-1{
-  font-size: large;
-  font-family: "Cooper-Light" ;
-  color: black;
-  margin: 2rem;
-}
-
-.servicios-subtextos-2{
-  font-size: large;
-  font-family: "Cooper-Light" ;
+.servicio-tipo-proyecto{
+ 
+  border: 5px solid black(231, 164, 62);
+  text-decoration: none;
   color: white;
-  margin: 2rem;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "Cooper-2";
 }
 
-.servicios-subtextos-3{
-  font-size: large;
-  font-family: "Cooper-Light" ;
-  color: black;
-  margin: 2rem;
+.servicio-tipo-proyecto:hover{
+  transition: all 0.4s;
+  transform: scale(1.2);
+  color: white;
 }
 
-.servicios-subtextos-4{
-  font-size: large;
-  font-family: "Cooper-Light" ;
-  color: black;
-  margin: 2rem;
+.servicio-tipo-proyecto-2{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: "Cooper-2";
+  text-decoration: none;
 }
+
+.servicio-tipo-proyecto-2:hover{
+  transition: all 0.4s;
+  transform: scale(1.2);
+  color: rgb(184, 184, 184);
+}
+
+.servicio-tipo-proyecto-3{
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "Cooper-2";
+  text-decoration: none;
+}
+
+.servicio-tipo-proyecto-3:hover{
+  transition: all 0.4s;
+  transform: scale(1.2);
+  color: rgb(184, 184, 184);
+}
+
+
+/* CLIENTES */
+
 
 .clientes-text{
   color: white;
@@ -202,9 +577,27 @@ nav,ul,li {
 .medios-text{
   color: white;
   font-family: "Cooper";
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
   padding: 20px;
+  margin-top: 50px;
+}
+
+.medios-group{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-image: linear-gradient(#dbdbdb,#e6e6e6,#dd9d4f,#c67e26);
+  border-radius: 100px
+}
+
+.imagen-medios{
+  width: 400px;
+  align-self: center;
+  justify-self: center;
+  padding: 30px;
 }
 
 .contacto{
@@ -222,6 +615,7 @@ nav,ul,li {
   font-size: 30px;
   text-align: center;
   padding: 20px;
+  margin-top: 40px;
 }
 
 .contacto-subseccion{
@@ -230,25 +624,29 @@ nav,ul,li {
   align-items: center;
   justify-items: start;
   margin-top: 30px;
+  margin-left: 310px;
 }
 
 .contacto-consultas{
   color: white;
   font-family: "Cooper";
   font-size: 25px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .contacto-oficinas{
   color: white;
   font-family: "Cooper";
   font-size: 25px;
+  margin-left: 50px;
 }
 
 .formulario{
   color: white;
   font-family: "Cooper";
+  background-color: rgb(135, 135, 135);
   font-size: 20px;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,7 +654,9 @@ nav,ul,li {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   text-align: center;
-  width: 380px;
+  width: 580px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .input-group{
@@ -264,3 +664,304 @@ nav,ul,li {
   flex-direction: column;
   text-align: left;
 }
+
+.label-form{
+  padding: 7px;
+  font-size: 15px ;
+}
+
+.btnform{
+  margin-top: 7px;
+  background-color: #e2b47b;
+  border: 5px rgb(97, 97, 97) solid;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.contacto-solicitudes, .contacto-direccion, .contacto-datos{
+  color: white;
+  font-family: "Cooper";
+  font-size: 18px;
+  font-family: "Cooper-Light";
+}
+
+.contacto-direccion{
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.contacto-solicitudes{
+  margin-right: 90px;
+  margin-left: 30px;
+}
+
+.contacto-datos{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-bottom: 410px;
+}
+
+.message{
+  font-size: medium;
+  color: #878787;
+}
+
+
+/* FOOTER */
+
+
+.footer-1{
+  margin-top: 50px;
+  background-color: white;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 600px;
+  margin-top: 20px;
+  align-content: center;
+  width: 500px;
+}
+
+.img-redes{
+  width: 40px;
+  align-self: center;
+  justify-self: center;
+}
+
+.footer-direccion{
+  color: black;
+  font-size: large;
+  font-family: "Cooper-Light";
+  margin: 30px;
+}
+
+/* REAL ESTATE - 1920/1080 */
+
+.main-real-estate{
+  background-color: #e4983b;
+}
+
+.propiedas-group{
+  padding: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.card{
+  margin-top: 50px;
+}
+
+/* PROYECTOS - 1920/1080 */
+
+.main-proyectos{
+  background-color: black;
+  padding-bottom: 100px;
+}
+
+.container{
+  background-color: black;
+  padding-top: 200px;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.title{
+  color: white;
+  font-size: xx-large;
+  font-family: 'Cooper';
+  text-align: center;
+}
+
+.listProduct{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: space-around;
+}
+
+.body-proyectos{
+  background-color: #000;
+}
+
+.nombre-proyecto{
+  color: white;
+font-size: medium;
+  font-family: 'Cooper';
+  margin-top: 40px;
+  position: relative;
+  width: 60%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.img-proyectos{
+  width: 500px;
+  height: 250px;
+  margin-top: 100px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+}
+
+.img-proyectos:hover{
+ transform: scale(1.2);
+ transition: 0.5s;
+}
+
+.listProduct, a{
+ text-decoration: none;
+}
+
+a, .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.container-2{
+  background-color: black;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.listProduct2{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+
+
+.footer-2{
+  background-color: white;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+ /* DETAIL - 1920/1080 */
+
+ .main-detail{
+background-color: black;
+ }
+
+ .container-detail{
+  padding-top: 250px;
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: auto auto;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 25px;
+ }
+
+.detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-detail{
+  color: white;
+  font-size: xx-large;
+  padding: 0px;
+}
+
+ .img-detail{
+  margin-top: 25px;
+  width: 400px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid white;
+ }
+
+.description{
+  color: white;
+  font-size: medium;
+  font-family: 'Cooper';
+  text-align: center;
+  margin-top: 25px;
+  width: 320px;
+}
+
+.carrusel{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  padding: 50px;
+}
+
+
+.image2{
+  grid-column: 1/5;
+}
+
+
+.image3, .image4, .image5, .image6 {
+  grid-row: 2/3;
+}
+
+
+.img-detail-2{
+  width: 100%;
+  height: 500px;
+  grid-column: 2/3;
+ }
+
+ .img-detail-3{
+  width: 100%;
+  height: 100%;
+  grid-column: 2/3;
+  margin-top: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+ }
+
+
+
+.otros-proyectos{
+  grid-column: 1/3;
+  margin-top: 120px;
+}
+
+.title-detail{
+  color: white;
+  font-size: x-large;
+  font-family: 'Cooper';
+  text-align: center;
+}
+
+ .img-similares{
+  width: 250px;
+ }
+
+ .img-similares:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
+ }
+
+ .listProduct, h2{
+  color: white;
+  font-family: 'Cooper';
+  margin-top: 40px;
+  font-size: large;
+  text-align: center;
+
+ }

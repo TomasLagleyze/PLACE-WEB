@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body class="body-proyectos">
+    <header class="main-header">
+        <nav>
+          <img class="logo" src="../LOGO/LOGO-2.png" alt="">
+          <ul class="menu">
+            <li><a class="secciones" href="../index.html">HOME</a></li>
+            <li><a class="secciones" href="./proyectos.html">PROYECTOS</a></li>
+            <li><a class="secciones" href="./gerenciamiento.html">GERENCIAMIENTO</a></li>
+            <li><a class="secciones" href="https://www.placearg.com/" target="_blank">REAL.ESTATE</a></li>
+            <li><a class="secciones" href="./index.html">CONOCENOS</a></li>
+            <li><a class="secciones" href="../index.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    </header>
+
+<main class="main-detail">
+    <div class="container-detail">
+        <div class="detail">
+            <h1 class="name-detail"></h1>
+            <div class="image">
+                <img class="img-detail" src="">
+            </div>
+            <div class="content">
+                <div class="description"></div>
+            </div>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img-proyectos-arq/proyecto1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../img-proyectos-arq/proyecto1_img1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../img-proyectos-arq/proyecto1_img2.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      <section class="otros-proyectos">
+        <div class="title-detail">Otros proyectos</div>
+        <div class="listProduct"></div>
+      </section>
+    </div>
+
+
+    <script>
+        let products2 = null;
+        // get datas from file json
+        fetch('../products2.json')
+            .then(response => response.json())
+            .then(data => {
+                products2 = data;
+                showDetail();
+        })
+
+        function showDetail(){
+    // remove datas default from HTML
+        let detail2 = document.querySelector('.detail2');
+        let listProduct2 = document.querySelector('.listProduct2');
+        let productId =  new URLSearchParams(window.location.search).get('id');
+        let thisProduct = products2.filter(value => value.id == productId)[0];
+        //if there is no product with id = productId => return to home page
+        if(!thisProduct){
+            window.location.href = "/";
+        }
+
+        detail2.querySelector('.image img').src = thisProduct.image;
+        detail2.querySelector('.name-detail').innerText = thisProduct.name;
+        detail2.querySelector('.description').innerText = thisProduct.description;
+
+
+        (products2.filter(value => value.id != productId)).forEach(product => {
+            let newProduct = document.createElement('a');
+            newProduct.href = '/sections/detail.html?id=' + product.id;
+            newProduct.classList.add('item');
+            newProduct.innerHTML = 
+            `<img class="img-similares" src="${product.image}" alt="">
+            <h2>${product.name}</h2>`;
+            listProduct2.appendChild(newProduct);
+        });
+    }
+    </script>
+</main>
+
+
+
+
+    <footer class="footer-1">
+        <div class="redes">
+        <a href="https://www.instagram.com/lagleyzemanagement/?hl=es" target="_blank"><img class="img-redes" src="../redes/instagram.png" alt=""></a>
+        <a href="https://www.linkedin.com/company/pl-am---pedro-lagleyze-architectural-management-/" target="_blank"><img class="img-redes" src="../redes/linkedin.png" alt=""></a>
+        <a href="https://wa.me/541167518500" target="_blank"><img class="img-redes" src="../redes/whatsapp.png" alt=""></a>
+        </div>
+        <div><h1 class="footer-direccion">Av. Libertador 8142, CABA</h1></div>
+        </footer>
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+
+          
+          <script src="./navbar.js"></script>
+          <script src="../proyectos.js"></script>
+         
+</body>
+</html>
