@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "name":" EDIFICIO CABRERA 3429, CIUDAD AUTONOMA DE BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/CABRERA 3429/1852476614.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Edificio residencial - proyecto: ESCARRA/PRADIER."
+    },
+
+    {
+        "id": 2,
+        "name":" HOTEL JUJUY, SAN SALVADOR DE JUJUY",
+        "image": "../img-proyectos-arq/proyecto1.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Hotel en San Salvador de JUJUY - proyecto: BRAND + PLACE."
+    },
+
+    {
+        "id": 3,
+        "name":" HOTEL LA CAROLINA, SAN JUAN",
+        "image": "../img-proyectos-gerenciamiento/LA CAROLINA/Captura de pantalla 2024-03-09 143958.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Hotel en San Luis - proyecto: BRAND.arquitectura ."
+    },
+
+    {
+        "id": 4,
+        "name":" HOTEL LUJAN DE CUYO, MENDOZA",
+        "image": "../img-proyectos-arq/proyecto2.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Hotel en Lujan de Cuyo, Mendoza - proyecto: BRAND + PLACE"
+    },
+
+    {
+        "id": 5,
+        "name":" EDIFICIO EN OLLEROS 3536, CIUDAD AUTONOMA DE BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/OLLEROS 3536/OLL2.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Edificio residencial - proyecto: Baudizzone-Lestard."
+    },
+
+    {
+        "id": 6,
+        "name":" HOTEL RADA TILLY, RIO NEGRO",
+        "image": "../img-proyectos-gerenciamiento/RADA TILLY/Enscape_2021-09-07-15-52-14.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Hotel en Rada Tilly, Provincia de Rio negro - proyecto: BRAND.arquitectura"
+    },
+
+    {
+        "id": 7,
+        "name":" HOTEL VILLA TRAFUL, NEUQUEN",
+        "image": "../img-proyectos-arq/proyecto3.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Hotel en Villa Traful, Neuquen - proyecto: RUL.arquitectos - PLACE"
+    },
+
+    {
+        "id": 8,
+        "name":" EDIFICIO UGARTE 1515, CIUDAD AUTONOMA DE BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/UGARTE 1515/BMA-Ugarte-902-03.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Edificio residencial - proyecto: BMA arquitectos "
+    }
+]

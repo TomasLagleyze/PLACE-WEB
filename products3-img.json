@@ -1,0 +1,109 @@
+[
+    {
+        "id": 1,
+        "name":" AGUA CALMA, CARILO",
+        "image": "../img-proyectos-gerenciamiento/AGUA CALMA/AC-1.jpg",
+        "image2": "../img-proyectos-gerenciamiento/AGUA CALMA/AC-1.jpg",
+        "image3": "../img-proyectos-gerenciamiento/AGUA CALMA/AC-1.jpg",
+        "image4": "../img-proyectos-gerenciamiento/AGUA CALMA/AC-2.jpg",
+        "image5": "../img-proyectos-gerenciamiento/AGUA CALMA/AC-3.jpg",
+        "image6": "../img-proyectos-gerenciamiento/AGUA CALMA/AC-4.jpg",
+        "description": "Edificio de oficinas para la empresa de tecnologia Baufest."
+    },
+
+    {
+        "id": 2,
+        "name":" ALGODON MANSION, CIUDAD AUTONOMA DE BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/ALGODON MANSION/AM5.jpg",
+        "image2": "../img-proyectos-gerenciamiento/ALGODON MANSION/AM5.jpg",
+        "image3": "../img-proyectos-gerenciamiento/ALGODON MANSION/AM5.jpg",
+        "image4": "../img-proyectos-gerenciamiento/ALGODON MANSION/AM1.jpg",
+        "image5": "../img-proyectos-gerenciamiento/ALGODON MANSION/AM2.jpg",
+        "image6": "../img-proyectos-gerenciamiento/ALGODON MANSION/AM3.jpg",
+        "description": "Edificio de oficinas para la empresa de tecnologia Baufest."
+    },
+
+    {
+        "id": 3,
+        "name":" ARENAS DE JOSE IGNACIO",
+        "image": "../img-proyectos-gerenciamiento/ARENAS DE JOSE IGNACIO/JI2.jpg",
+        "image2": "../img-proyectos-gerenciamiento/ARENAS DE JOSE IGNACIO/JI2.jpg",
+        "image3": "../img-proyectos-gerenciamiento/ARENAS DE JOSE IGNACIO/JI2.jpg",
+        "image4": "../img-proyectos-gerenciamiento/ARENAS DE JOSE IGNACIO/JI.jpg",
+        "image5": "../img-proyectos-gerenciamiento/ARENAS DE JOSE IGNACIO/JI3.jpg",
+        "image6": "../img-proyectos-gerenciamiento/ARENAS DE JOSE IGNACIO/JI3.jpg",
+        "description": "Edificio de oficinas para la empresa de tecnologia Baufest."
+    },
+
+    {
+        "id": 4,
+        "name":" CARILO SUR, CARILO",
+        "image": "../img-proyectos-gerenciamiento/CARILO SUR/EDSA3.jpg",
+        "image2": "../img-proyectos-gerenciamiento/CARILO SUR/EDSA3.jpg",
+        "image3": "../img-proyectos-gerenciamiento/CARILO SUR/EDSA3.jpg",
+        "image4": "../img-proyectos-gerenciamiento/CARILO SUR/EDSA1.jpg",
+        "image5": "../img-proyectos-gerenciamiento/CARILO SUR/EDSA2.jpg",
+        "image6": "../img-proyectos-gerenciamiento/CARILO SUR/CG2.jpg",
+        "description": "Edificio de oficinas para la empresa de tecnologia Baufest."
+    },
+
+    {
+        "id": 5,
+        "name":" CASA ARRIBEÑOS, CIUDAD AUTONOMA DE BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/CASA ARRIBEÑOS/PP PR1.jpg",
+        "image2": "../img-proyectos-gerenciamiento/CASA ARRIBEÑOS/PP PR1.jpg",
+        "image3": "../img-proyectos-gerenciamiento/CASA ARRIBEÑOS/PP PR1.jpg",
+        "image4": "../img-proyectos-gerenciamiento/CASA ARRIBEÑOS/PP PR2.jpg",
+        "image5": "../img-proyectos-gerenciamiento/CASA ARRIBEÑOS/PP1.jpg",
+        "image6": "../img-proyectos-gerenciamiento/CASA ARRIBEÑOS/PP2.jpg",
+        "description": "Edificio de oficinas para la empresa de tecnologia Baufest."
+    },
+
+    {
+        "id": 6,
+        "name":" DARWIN TORTUGAS, PILAR, BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/DARWIN TORTUGAS/20181130_145655.jpg",
+        "image2": "../img-proyectos-gerenciamiento/DARWIN TORTUGAS/20181130_145655.jpg",
+        "image3": "../img-proyectos-gerenciamiento/DARWIN TORTUGAS/20181130_145655.jpg",
+        "image4": "../img-proyectos-gerenciamiento/DARWIN TORTUGAS/20181204_161422.jpg",
+        "image5": "../img-proyectos-gerenciamiento/DARWIN TORTUGAS/copia-de-darwin-web-25-1_7_154411-159307825928594.jpg",
+        "image6": "../img-proyectos-gerenciamiento/DARWIN TORTUGAS/Screenshot_20181121-234426_Instagram.jpg",
+        "description": "Edificio de oficinas para la empresa de tecnologia Baufest."
+    },
+
+    {
+        "id": 7,
+        "name":" HOWARD JOHNSON, CARRASCO, URUGUAY",
+        "image": "../img-proyectos-gerenciamiento/HOWARD JOHNSON CARRASCO/592x333howard.jpg",
+        "image2": "../img-proyectos-gerenciamiento/HOWARD JOHNSON CARRASCO/592x333howard.jpg",
+        "image3": "../img-proyectos-gerenciamiento/HOWARD JOHNSON CARRASCO/592x333howard.jpg",
+        "image4": "../img-proyectos-gerenciamiento/HOWARD JOHNSON CARRASCO/414769334.jpg",
+        "image5": "../img-proyectos-gerenciamiento/HOWARD JOHNSON CARRASCO/HJ-1.jpg",
+        "image6": "../img-proyectos-gerenciamiento/HOWARD JOHNSON CARRASCO/HJ-2.jpg",
+        "description": "Edificio de oficinas para la empresa de tecnologia Baufest."
+    },
+
+    {
+        "id": 8,
+        "name":" HOTEL IBIS, CONGRESO, CIUDAD AUTONOMA DE BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/IBIS CONGRESO/ibis-buenos-aires-congreso-general-ca15ac4.jpg",
+        "image2": "../img-proyectos-gerenciamiento/IBIS CONGRESO/ibis-buenos-aires-congreso-general-ca15ac4.jpg",
+        "image3": "../img-proyectos-gerenciamiento/IBIS CONGRESO/ibis-buenos-aires-congreso-general-ca15ac4.jpg",
+        "image4": "../img-proyectos-gerenciamiento/IBIS CONGRESO/3251_ho_00_p_1024x768.jpg",
+        "image5": "../img-proyectos-gerenciamiento/IBIS CONGRESO/ibis_Buenos_Aires_Congreso-Buenos_Aires-Aussenansicht-11-161181.jpg",
+        "image6": "../img-proyectos-gerenciamiento/IBIS CONGRESO/ibis-buenos-aires-congreso-general-ca15a0d.jpg",
+        "description": "Edificio de oficinas para la empresa de tecnologia Baufest."
+    },
+
+    {
+        "id": 9,
+        "name":" POLO GRANDE",
+        "image": "../img-proyectos-gerenciamiento/POLO GRANDE/FD.jpg",
+        "image2": "../img-proyectos-gerenciamiento/POLO GRANDE/FD.jpg",
+        "image3": "../img-proyectos-gerenciamiento/POLO GRANDE/FD.jpg",
+        "image4": "../img-proyectos-gerenciamiento/POLO GRANDE/FD2.jpg",
+        "image5": "../img-proyectos-gerenciamiento/POLO GRANDE/FD.jpg",
+        "image6": "../img-proyectos-gerenciamiento/POLO GRANDE/FD2.jpg",
+        "description": "Edificio de oficinas para la empresa de tecnologia Baufest."
+    }
+]

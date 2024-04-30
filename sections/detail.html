@@ -37,9 +37,12 @@
         </div>
 
 <div class="carrusel">
+  <section class="carrusel-main">
   <div class="image2">
   <img class="img-detail-2" src="" id="MainImage">
 </div>
+</section>
+<section class="carrusel-miniaturas">
 <div class="image3">
     <img class="img-detail-3" src="">
   </div>
@@ -52,6 +55,7 @@
   <div class="image6">
     <img class="img-detail-3" src="">
   </div>
+</section>
 </div>
 </div>
 
@@ -64,102 +68,93 @@
       </div>
       </div>
 
-
-
-
       <script>
-        let products2 = null;
+        let products1 = null;
         // get datas from file json
         fetch('../products.json')
             .then(response => response.json())
             .then(data => {
-                products2 = data;
-                showDetail2();
+                products1 = data;
+                showDetail();
         })
         
-        function showDetail2(){
+        function showDetail(){
         // remove datas default from HTML
-        let detail = document.querySelector('.carrusel');
-        let listProductimg = document.querySelector('.listProductimg');
+        let detail = document.querySelector('.detail');
+        let listProduct = document.querySelector('.listProduct');
         let productId =  new URLSearchParams(window.location.search).get('id');
-        let thisProduct = products2.filter(value => value.id == productId)[0];
+        let thisProduct = products1.filter(value => value.id == productId)[0];
         //if there is no product with id = productId => return to home page
         if(!thisProduct){
             window.location.href = "/";
         }
         
-        detail.querySelector('.image2 img').src = thisProduct.image2;
-        detail.querySelector('.image3 img').src = thisProduct.image3;
-        detail.querySelector('.image4 img').src = thisProduct.image4;
-        detail.querySelector('.image5 img').src = thisProduct.image5;
-        detail.querySelector('.image6 img').src = thisProduct.image6;
+        detail.querySelector('.image img').src = thisProduct.image;
+        detail.querySelector('.name-detail').innerText = thisProduct.name;
+        detail.querySelector('.description').innerText = thisProduct.description;
+        
+        
+        (products1.filter(value => value.id != productId)).forEach(product => {
+            let newProduct = document.createElement('a');
+            newProduct.href = './detail.html?id=' + product.id;
+            newProduct.classList.add('item');
+            newProduct.innerHTML = 
+            `<img class="img-similares" src="${product.image}" alt="">
+            <h2 class="text-similares">${product.name}</h2>`;
+            listProduct.appendChild(newProduct);
+        });
         }
       </script>
-      
-
-
-
-
-
-
+    
 <script>
-    let products1 = null;
-    // get datas from file json
-    fetch('../products.json')
-        .then(response => response.json())
-        .then(data => {
-            products1 = data;
-            showDetail();
-    })
-    
-    function showDetail(){
-    // remove datas default from HTML
-    let detail = document.querySelector('.detail');
-    let listProduct = document.querySelector('.listProduct');
-    let productId =  new URLSearchParams(window.location.search).get('id');
-    let thisProduct = products1.filter(value => value.id == productId)[0];
-    //if there is no product with id = productId => return to home page
-    if(!thisProduct){
-        window.location.href = "/";
-    }
-    
-    detail.querySelector('.image img').src = thisProduct.image;
-
-    detail.querySelector('.name-detail').innerText = thisProduct.name;
-    detail.querySelector('.description').innerText = thisProduct.description;
-    
-    
-    (products1.filter(value => value.id != productId)).forEach(product => {
-        let newProduct = document.createElement('a');
-        newProduct.href = './detail.html?id=' + product.id;
-        newProduct.classList.add('item');
-        newProduct.innerHTML = 
-        `<img class="img-similares" src="${product.image}" alt="">
-        <h2>${product.name}</h2>`;
-        listProduct.appendChild(newProduct);
-    });
-    }
-  </script>
-
-<script>
-    var MainImage = document.getElementById ('MainImage');
-    var smalling = document.getElementsByClassName ('img-detail-3')
-
-    smalling [0].onclick = function(){
-        MainImage.src = smalling[0].src;
-    }
-
-    smalling [1].onclick = function(){
-        MainImage.src = smalling[1].src;
-    }
-
-    smalling [2].onclick = function(){
-        MainImage.src = smalling[2].src;
-    }
-    smalling [3].onclick = function(){
-        MainImage.src = smalling[3].src;
-    }
+  let products2 = null;
+  // get datas from file json
+  fetch('../products-img.json')
+      .then(response => response.json())
+      .then(data => {
+          products2 = data;
+          showDetail2();
+  })
+  
+  function showDetail2(){
+  // remove datas default from HTML
+  let detail = document.querySelector('.carrusel');
+  let listProductimg = document.querySelector('.listProductimg');
+  let productId =  new URLSearchParams(window.location.search).get('id');
+  let thisProduct = products2.filter(value => value.id == productId)[0];
+  //if there is no product with id = productId => return to home page
+  if(!thisProduct){
+      window.location.href = "/";
+  }
+  
+  detail.querySelector('.image2 img').src = thisProduct.image2;
+  detail.querySelector('.image3 img').src = thisProduct.image3;
+  detail.querySelector('.image4 img').src = thisProduct.image4;
+  detail.querySelector('.image5 img').src = thisProduct.image5;
+  detail.querySelector('.image6 img').src = thisProduct.image6;
+  }
 </script>
+
+<script>
+  var MainImage = document.getElementById ('MainImage');
+  var smalling = document.getElementsByClassName ('img-detail-3')
+
+  smalling [0].onclick = function(){
+      MainImage.src = smalling[0].src;
+  }
+
+  smalling [1].onclick = function(){
+      MainImage.src = smalling[1].src;
+  }
+
+  smalling [2].onclick = function(){
+      MainImage.src = smalling[2].src;
+  }
+  smalling [3].onclick = function(){
+      MainImage.src = smalling[3].src;
+  }
+</script>
+
 
 
 </main>
@@ -175,6 +170,6 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
           <script src="./navbar.js"></script>
-          <script src="../carrusel.js"></script>
+
 </body>
 </html>

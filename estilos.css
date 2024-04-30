@@ -56,6 +56,7 @@ nav{
   z-index: 10;
 }
 
+
 nav.active{
   background:rgb(56, 56, 56);
   /* padding: 15px; */
@@ -91,11 +92,27 @@ nav.active a:hover{
   text-align: center;
 }
 
-.menu li a:hover{
+
+.secciones{
+  color: white;
+  font-family: "Cooper-Light";
+  list-style-type: none;
+  text-decoration: none;
+  border-radius: 15px solid ;
+}
+
+.menu  li a{
+  padding: 5px 10%;
+ 
+
+  border-radius: 10px transparent;
+}
+
+.menu  li a:hover{
   padding: 5px 10%;
   background: #fff;
   color: #F0A943;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .scrol{
@@ -108,12 +125,6 @@ nav.active a:hover{
     height: 100px;
    }
 
-  .secciones{
-    color: white;
-    font-family: "Cooper-Light";
-    list-style-type: none;
-    text-decoration: none;
-  }
 
 /* CARROUSEL */
 
@@ -908,9 +919,14 @@ background-color: black;
 }
 
 
-.image2{
+.carrusel-main{
+  display: flex;
+  flex-direction: row;
   grid-column: 1/5;
+  justify-content: center;
 }
+
+
 
 
 .image3, .image4, .image5, .image6 {
@@ -922,18 +938,34 @@ background-color: black;
   width: 100%;
   height: 500px;
   grid-column: 2/3;
+  cursor: pointer;
  }
 
+ .img-detail-2:hover{
+  transform: scale(1.02);
+  transition: 0.5s;
+   }
+
+.carrusel-miniaturas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  max-width: 100%;
+}
+
  .img-detail-3{
-  width: 100%;
-  height: 100%;
   grid-column: 2/3;
-  margin-top: 5px;
+  margin-top: 10px;
   max-width: 100%;
   max-height: 100%;
   cursor: pointer;
  }
 
+ .img-detail-3:hover{
+transform: scale(1.05);
+transition: 0.5s;
+ }
 
 
 .otros-proyectos{
@@ -946,22 +978,276 @@ background-color: black;
   font-size: x-large;
   font-family: 'Cooper';
   text-align: center;
+  margin: 30px;
 }
 
  .img-similares{
-  width: 250px;
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 15px;
  }
 
  .img-similares:hover{
-  transform: scale(1.5);
-  transition: 0.5s;
+  transform: scale(1.2);
+  transition: 0.3s;
  }
 
  .listProduct, h2{
   color: white;
   font-family: 'Cooper';
-  margin-top: 40px;
+  margin: 40px;
   font-size: large;
   text-align: center;
 
  }
+
+ .text-similares{
+  color: white;
+  font-size: 15px;
+  font-family: 'Cooper';
+  width: 200px;
+
+ }
+
+/* 
+ CONOCENOS - 1920 X 1080 */
+
+ .body-conocenos {
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: rgb(135, 135, 135); */
+  background-image: white;
+}
+
+.introduccion{
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+ .texto-conocenos1{
+  color: black;
+  font-size: xx-large;
+  font-family: 'Cooper';
+ }
+
+ .texto-conocenos2{
+  color: black;
+  font-size: x-large;
+  font-family: 'Cooper';
+ }
+
+
+/* PASO A PASO LINEAMIENTOS */
+
+.linea-progreso{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+
+}
+
+.container-iconos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+.icono-conocenos{
+  width: 175px;
+  height: 175px;
+  border-radius: 20%;
+  border: 2px solid black;
+  margin: 15px;
+}
+
+.icono-conocenos:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+
+
+.geometria{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.linea-horizontal{
+  height: 2px;
+  width: 300px;
+background-color: black;
+}
+
+.circulos{
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.circulos:hover{
+ transform: scale(1.4);
+  transition: 0.4s;
+  background-color: #6c6c6c;
+}
+
+.textos-iconos{
+  color: black;
+  font-family: 'Cooper';
+  font-size: large;
+}
+
+.conoce-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-items: center;
+
+}
+
+.conoce-1{
+  color: black;
+  font-family: 'Cooper';
+  font-size: 150px;
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.conoce-2{
+  color: black;
+  font-family: 'Cooper';
+  font-size: 100px;
+  margin: 30px;
+}
+
+.conoce-3{
+  color: black;
+  font-family: 'Cooper';
+  font-size: 150px;
+  margin: 30px;
+}
+
+.equipo{
+  margin-top: 100px;
+}
+
+.integrante{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-items: center;
+  margin: 50px;
+
+}
+
+.integrante-grupal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-items: center;
+}
+
+.integrante2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-items: center;
+  margin: 50px;
+
+}
+
+.img-integrante{
+  margin-top: 25px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+ }
+
+ .img-integrante:hover{
+  transform: scale(1.3);
+  transition: 0.5s;
+  cursor: pointer;
+ }
+
+ .texto-integrante{
+  color: black;
+  font-size: large;
+  font-family: 'Cooper';
+ }
+
+ .foto-grupal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.foto-grupal-2{
+  border-radius: 1%;
+}
+
+/* GERENCIAMIENTO - 1920 X 1080 */
+
+.main-proyectos{
+  background-color: black;
+  padding-bottom: 100px;
+}
+
+
+.listProduct3{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+
+.listProduct4{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.title-detail3{
+  margin-bottom: 50px;
+  color: white;
+  font-size: x-large;
+  font-family: 'Cooper';
+  text-align: center;
+}
+
+
+
+.nombre-proyecto-3{
+  color: white;
+  font-size: 15px;
+}

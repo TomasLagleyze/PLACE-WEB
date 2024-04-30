@@ -17,7 +17,7 @@
     {
         products2.forEach(product => {
             let newProduct = document.createElement('a');
-            newProduct.href = './detail.html?id=' + product.id;
+            newProduct.href = './detail2.html?id=' + product.id;
             newProduct.classList.add('item');
             newProduct.innerHTML = 
             ` <img class="img-proyectos" src="${product.image}" alt="">

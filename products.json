@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name":" HOTEL, SAN SALVADOR DE JUJUY",
+        "name":" HOTEL, SAN SALVADOR DE JUJUY, JUJUY",
         "image": "../img-proyectos-arq/proyecto1.jpg",
         "image2": "../img-proyectos-arq/proyecto1.jpg",
         "image3": "../img-proyectos-arq/proyecto1.jpg",
@@ -17,8 +17,8 @@
         "image2": "../img-proyectos-arq/proyecto2.jpg",
         "image3": "../img-proyectos-arq/proyecto2.jpg",
         "image4": "../img-proyectos-arq/proyecto2_img1.jpg",
-        "image5": "../img-proyectos-arq/proyecto1_img2.jpg",
-        "image6": "../img-proyectos-arq/proyecto1_img3.jpg",
+        "image5": "../img-proyectos-arq/proyecto2_img2.jpg",
+        "image6": "../img-proyectos-arq/proyecto2_img3.jpg",
         "description": "Hotel en Lujan de Cuyo, Mendoza.Proyecto realizado en conjunto a BRAND.arquitectura"
     },
     {

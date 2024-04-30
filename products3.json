@@ -1,0 +1,109 @@
+[
+    {
+        "id": 1,
+        "name":" AGUA CALMA, CARILO",
+        "image": "../img-proyectos-gerenciamiento/AGUA CALMA/AC-1.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Complejo Agua Calma, ubicado en Carilo - proyecto: CMS"
+    },
+
+    {
+        "id": 2,
+        "name":" ALGODON MANSION, CIUDAD AUTONOMA DE BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/ALGODON MANSION/AM5.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Hotel Algodon Mansion, ubicado en el barrio de Recoleta - proyecto: HEUSCH INC"
+    },
+
+    {
+        "id": 3,
+        "name":" ARENAS DE JOSE IGNACIO",
+        "image": "../img-proyectos-gerenciamiento/ARENAS DE JOSE IGNACIO/JI2.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Complejo residencial, Jose Ignacio, Uruguay - proyecto:"
+    },
+
+    {
+        "id": 4,
+        "name":" CARILO SUR, CARILO",
+        "image": "../img-proyectos-gerenciamiento/CARILO SUR/EDSA3.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Desarrollo Carilo Sur, ubicaco en Carilo - proyecto: CMS - EDSA"
+    },
+
+    {
+        "id": 5,
+        "name":" CASA ARRIBEÑOS, CIUDAD AUTONOMA DE BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/CASA ARRIBEÑOS/PP PR1.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Casa ubicada en la calle Arribeños - proyecto: ADAMO-FAIDEN"
+    },
+
+    {
+        "id": 6,
+        "name":" DARWIN TORTUGAS, PILAR, BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/DARWIN TORTUGAS/20181130_145655.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Salon de eventos ubicado en la localidad de Pilar - proyecto: MO / S + S"
+    },
+
+    {
+        "id": 7,
+        "name":" HOWARD JOHNSON, CARRASCO, URUGUAY",
+        "image": "../img-proyectos-gerenciamiento/HOWARD JOHNSON CARRASCO/592x333howard.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Hotel Howard Johnson ubicado en Carrasco, Uruguay - proyecto: Herrera Lusssich "
+    },
+
+    {
+        "id": 8,
+        "name":" HOTEL IBIS, CONGRESO, CIUDAD AUTONOMA DE BUENOS AIRES",
+        "image": "../img-proyectos-gerenciamiento/IBIS CONGRESO/ibis-buenos-aires-congreso-general-ca15ac4.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Hotel Ibis ubicado en la zona de Congreso - proyecto: "
+    },
+
+    {
+        "id": 9,
+        "name":" POLO GRANDE",
+        "image": "../img-proyectos-gerenciamiento/POLO GRANDE/FD.jpg",
+        "image2": "../AC-1.jpg",
+        "image3": "../AC-1.jpg",
+        "image4": "../AC-2.jpg",
+        "image5": "../AC-2.jpg",
+        "image6": "../img-proyectos-arq/proyecto4.jpg",
+        "description": "Desarrollo residencial - proyecto:"
+    }
+]
